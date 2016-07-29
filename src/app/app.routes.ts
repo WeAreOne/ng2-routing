@@ -3,8 +3,7 @@ import { provideRouter, RouterConfig } from '@angular/router';
 import { HomeComponent } from './home';
 import { AboutComponent } from "./about";
 import { ContactComponent } from "./contact";
-import { PostDetailComponent } from "./post-detail";
-import { PostsSearchComponent } from "./posts-search";
+import { PostDetailComponent, PostsSearchComponent } from "./posts";
 
 const routes: RouterConfig = [
   { path: '', redirectTo: 'home', terminal: true },
