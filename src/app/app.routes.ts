@@ -3,7 +3,7 @@ import { provideRouter, RouterConfig } from '@angular/router';
 import { HomeComponent } from './home';
 import { AboutComponent } from "./about";
 import { ContactComponent } from "./contact";
-import { PostDetailComponent, PostsSearchComponent } from "./posts";
+import { postsRoutes } from "./posts";
 
 const routes: RouterConfig = [
   { path: '', redirectTo: 'home', terminal: true },
@@ -11,8 +11,7 @@ const routes: RouterConfig = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'contact-us', redirectTo: 'contact' },
-  { path: 'posts', component: PostsSearchComponent },
-  { path: 'posts/:id', component: PostDetailComponent }
+  ...postsRoutes
 ];
 
 export const appRouterProviders = [ provideRouter(routes) ];
