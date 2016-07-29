@@ -4,6 +4,7 @@ import { HomeComponent } from './home';
 import { AboutComponent } from "./about";
 import { ContactComponent } from "./contact";
 import { PostDetailComponent } from "./post-detail";
+import { PostsSearchComponent } from "./posts-search";
 
 const routes: RouterConfig = [
   { path: '', redirectTo: 'home', terminal: true },
@@ -11,6 +12,7 @@ const routes: RouterConfig = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'contact-us', redirectTo: 'contact' },
+  { path: 'posts', component: PostsSearchComponent },
   { path: 'posts/:id', component: PostDetailComponent }
 ];
 
