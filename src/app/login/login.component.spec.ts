@@ -3,11 +3,11 @@
 // import { By }           from '@angular/platform-browser';
 // import { DebugElement } from '@angular/core';
 // import { addProviders, async, inject } from '@angular/core/testing';
-// import { NavbarComponent } from './navbar.component';
+// import { LoginComponent } from './login.component';
 //
-// describe('Component: Navbar', () => {
+// describe('Component: Login', () => {
 //   it('should create an instance', () => {
-//     let component = new NavbarComponent();
+//     let component = new LoginComponent();
 //     expect(component).toBeTruthy();
 //   });
 // });

@@ -43,6 +43,9 @@ const barrels: string[] = [
   'app/posts',
   'app/posts/post-detail',
   'app/posts/posts-search',
+  'app/protected',
+  'app/shared/authentication',
+  'app/login',
   /** @cli-barrel */
 ];
 
