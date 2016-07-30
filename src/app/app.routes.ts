@@ -7,6 +7,7 @@ import { postsRoutes } from "./posts";
 import { ProtectedComponent } from "./protected";
 import { AuthenticatedGuard, AuthenticateService } from "./shared/authentication";
 import { LoginComponent } from "./login";
+import { DiscardChangesGuard } from "./shared";
 
 const routes: RouterConfig = [
   { path: '', redirectTo: 'home', terminal: true },
@@ -21,5 +22,6 @@ const routes: RouterConfig = [
 
 export const appRouterProviders = [
   provideRouter(routes),
-  [ AuthenticatedGuard, AuthenticateService ]
+  [ AuthenticatedGuard, AuthenticateService ],
+  DiscardChangesGuard
 ];

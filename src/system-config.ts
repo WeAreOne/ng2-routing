@@ -43,6 +43,7 @@ const barrels: string[] = [
   'app/posts',
   'app/posts/post-detail',
   'app/posts/posts-search',
+  'app/posts/shared',
   'app/protected',
   'app/shared/authentication',
   'app/login',
