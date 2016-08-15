@@ -8,7 +8,6 @@ import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [ PostsComponent, PostDetailComponent, PostsSearchComponent ],
   imports:      [ CommonModule, postsRouting, FormsModule ],
-  bootstrap:    [ PostsComponent ],
   providers:    [ postsRouterProviders ]
 })
 export class PostsModule {}
