@@ -7,8 +7,7 @@ import { AuthenticateService } from "../authentication";
   moduleId: module.id,
   selector: 'my-navbar',
   templateUrl: 'navbar.component.html',
-  styleUrls: ['navbar.component.css'],
-  directives: [ ROUTER_DIRECTIVES ]
+  styleUrls: ['navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
 

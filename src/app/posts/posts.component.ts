@@ -5,8 +5,7 @@ import { ROUTER_DIRECTIVES } from "@angular/router";
   moduleId: module.id,
   selector: 'app-posts',
   templateUrl: 'posts.component.html',
-  styleUrls: ['posts.component.css'],
-  directives: [ ROUTER_DIRECTIVES ]
+  styleUrls: ['posts.component.css']
 })
 export class PostsComponent {
 

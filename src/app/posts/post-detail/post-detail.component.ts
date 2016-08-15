@@ -9,8 +9,7 @@ import { Observable } from "rxjs/Rx";
   moduleId: module.id,
   selector: 'app-post-detail',
   templateUrl: 'post-detail.component.html',
-  styleUrls: ['post-detail.component.css'],
-  providers: [ DialogService ]
+  styleUrls: ['post-detail.component.css']
 })
 export class PostDetailComponent implements OnInit, CanComponentDeactivate {
   id: string;
@@ -27,7 +26,7 @@ export class PostDetailComponent implements OnInit, CanComponentDeactivate {
   }
 
   canDeactivate(): Observable<boolean> | boolean {
-    // Allow synchronous navigation (`true`) if no crisis or the crisis is unchanged
+    // Allow synchronous navigation (`true`) if no post or the post title is unchanged
     if (!this.model || this.model.title === this.editTitle) {
       return true;
     }
