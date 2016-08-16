@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'contact-us', redirectTo: 'contact' },
+  { path: 'posts', loadChildren: 'app/posts/posts.module' },
   { path: 'protected', component: ProtectedComponent, canActivate: [ AuthenticatedGuard ]},
   { path: 'login', component: LoginComponent }
 ];

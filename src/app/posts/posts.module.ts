@@ -11,4 +11,4 @@ import { DialogService } from "../shared";
   imports:      [ CommonModule, postsRouting, FormsModule ],
   providers:    [ postsRouterProviders, DialogService ]
 })
-export class PostsModule {}
+export default class PostsModule {}

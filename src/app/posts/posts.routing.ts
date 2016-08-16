@@ -6,7 +6,7 @@ import { PostDetailComponent } from "./post-detail";
 import { DiscardChangesGuard } from "../shared";
 
 const postsRoutes: Routes = [
-  { path: 'posts', component: PostsComponent, children: [
+  { path: '', component: PostsComponent, children: [
     { path: 'search', component: PostsSearchComponent, pathMatch: 'full' },
     { path: ':id', component: PostDetailComponent, canDeactivate: [ DiscardChangesGuard ] }
   ]}

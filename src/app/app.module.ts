@@ -13,7 +13,7 @@ import { LoginComponent } from "./login";
 @NgModule({
   declarations: [ AppComponent, NavbarComponent, HomeComponent, AboutComponent, ContactComponent, ProtectedComponent,
     LoginComponent ],
-  imports:      [ BrowserModule, routing, PostsModule ],
+  imports:      [ BrowserModule, routing ],
   bootstrap:    [ AppComponent ],
   providers:    [ appRouterProviders ]
 })
